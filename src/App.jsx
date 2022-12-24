@@ -34,7 +34,7 @@ render() {
                     <Route path='/Jokes' element={<Home search={this.state.search} language={this.state.language} q="Jokes" />} />
                     <Route path='/Games' element={<Home search={this.state.search} language={this.state.language} q="Games" />} />
                     <Route path='/Cricket' element={<Home search={this.state.search} language={this.state.language} q="Cricket" />} />
-                    <Route path='/Fifa' element={<Home search={this.state.search} language={this.state.language} q="Fifa" />} />
+                    <Route path='/Ffa' element={<Home search={this.state.search} language={this.state.language} q="Ffa" />} />
                     <Route path='/World' element={<Home search={this.state.search} language={this.state.language} q="World" />} />
                     <Route path='/India' element={<Home search={this.state.search} language={this.state.language} q="India" />} />
                     <Route path='/Covid' element={<Home search={this.state.search} language={this.state.language} q="Covid" />} />

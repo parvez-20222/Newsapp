@@ -13,9 +13,9 @@ export default class Home extends Component {
   getAPIData = async () => {
     var response = ""
     if (this.props.search)
-      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.search}&page=1&pageSize=20&language=${this.props.language}&apiKey=89bd06ab8dc748cd890fce2658327e3d`)
+      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.search}&page=1&pageSize=20&language=${this.props.language}&apiKey=810be0c64b16434792346a6dc78aaf05`)
     else
-      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.q}&page=1&pageSize=20&language=${this.props.language}&apiKey=89bd06ab8dc748cd890fce2658327e3d`)
+      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.q}&page=1&pageSize=20&language=${this.props.language}&apiKey=810be0c64b16434792346a6dc78aaf05`)
     var result = await response.json()
     this.setState({
       articles: result.articles,
@@ -27,9 +27,9 @@ export default class Home extends Component {
     this.setState({ page: this.state.page + 1 })
     var response = ""
     if (this.props.search)
-      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.search}&page=${this.state.page}&pageSize=20&language=${this.props.language}&apiKey=89bd06ab8dc748cd890fce2658327e3d`)
+    response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.q}&page=${this.state.search}&pageSize=20&language=${this.props.language}&apiKey=810be0c64b16434792346a6dc78aaf05`)
     else
-      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.q}&page=${this.state.page}&pageSize=20&language=${this.props.language}&apiKey=89bd06ab8dc748cd890fce2658327e3d`)
+      response = await fetch(`https://newsapi.org/v2/everything?q=${this.props.q}&page=${this.state.page}&pageSize=20&language=${this.props.language}&apiKey=810be0c64b16434792346a6dc78aaf05`)
     var result = await response.json()
     this.setState({ articles: this.state.articles.concat(result.articles) })
   }

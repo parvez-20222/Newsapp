@@ -48,7 +48,7 @@ render() {
                                     <li><Link className="dropdown-item" to="/Technology" onClick={()=>this.props.changeSearch("")}>Technology</Link></li>
                                     <li><Link className="dropdown-item" to="/Games" onClick={()=>this.props.changeSearch("")}>Games</Link></li>
                                     <li><Link className="dropdown-item" to="/Cricket" onClick={()=>this.props.changeSearch("")}>Cricket</Link></li>
-                                    <li><Link className="dropdown-item" to="/Fifa" onClick={()=>this.props.changeSearch("")}>Fifa</Link></li>
+                                    <li><Link className="dropdown-item" to="/Ffa" onClick={()=>this.props.changeSearch("")}>Ffa</Link></li>
                                     <li><Link className="dropdown-item" to="/World" onClick={()=>this.props.changeSearch("")}>World</Link></li>
                                     <li><Link className="dropdown-item" to="/India" onClick={()=>this.props.changeSearch("")}>India</Link></li>
                                     <li><Link className="dropdown-item" to="/Jokes" onClick={()=>this.props.changeSearch("")}>Jokes</Link></li>
